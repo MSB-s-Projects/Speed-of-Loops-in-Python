@@ -1,7 +1,7 @@
 # Python Program to print Astrologer's Stars
 
 def pattern(num, bol):
-    """Function to print patter according to requirements of question."""
+    """Function to print pattern according to requirements of question."""
 
     bob = bool(bol)                     # Converting the integer b to bool.
 

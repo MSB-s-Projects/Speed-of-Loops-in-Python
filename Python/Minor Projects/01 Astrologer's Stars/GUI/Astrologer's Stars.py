@@ -14,7 +14,7 @@ os.chdir("Projects//Python//Minor Projects//01 Astrologer's Stars//GUI")
 def show(a):
     """Function to show the stars."""
 
-    a += 1                                                                      # Garbage calculation to make use of the unused argument.
+    type(a)                                                                     # Garbage calculation to make use of the unused argument.
 
     try:                                                                        # Try block to check if the input of n.
         int(en1.get())

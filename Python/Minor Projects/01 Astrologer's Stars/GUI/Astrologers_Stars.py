@@ -3,12 +3,19 @@
 
 # Imports
 import os
+import sys
+from PIL import Image
+from tkinter.tix import Tk, Balloon
 from tkinter import END, RIDGE, Button, Entry, Frame, Label, Text, Toplevel, messagebox
-from tkinter.tix import *
 
+# creating a path for the icon of the window.
+def resource_path(relative_path):
+    """Get absolute path to resource, works for dev and for PyInstaller."""
 
-# Changing the directory to where the file is.
-os.chdir("Projects//Python//Minor Projects//01 Astrologer's Stars//GUI")
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base_path, relative_path)
+
+path = resource_path("./Icon//Icon.ico")
 
 
 def show(a):
@@ -51,8 +58,9 @@ def show(a):
         # Setting the title of the window.
         top1.title("Stars Output")
 
+        # Setting the icon of the window.
         try:                                                                    # Try block to set the icon of the window.
-            top1.iconbitmap("Images//Goodstuff-No-Nonsense-Free-Space-Stars.ico")   # Setting the icon of the window.
+            top1.iconbitmap(path)
         except Exception:                                                       # If the icon is not found, show an error message.
             messagebox.showerror("Error", "icon.ico not found.")
         
@@ -84,7 +92,7 @@ if __name__ == '__main__':
 
     # Trying to Add Icon to window.
     try:
-        root1.iconbitmap("Images//Goodstuff-No-Nonsense-Free-Space-Stars.ico")
+        root1.iconbitmap(path)
 
     except Exception:
         messagebox.showerror("Error", "Icon not found.")
@@ -123,7 +131,7 @@ if __name__ == '__main__':
     tip1.bind_widget(en1, balloonmsg="Enter the value of n(Integer)")           # Binding the Balloon to the Entry.
 
     # Repeat the same for the other Entry.
-    lb2 = Label(f1, text="Enter the bool :", font="Areal 12")
+    lb2 = Label(f1, text="Enter the bool (0 or 1) :", font="Areal 12")
     lb2.grid(row=1, column=0, pady=10)
 
     tip2 = Balloon()

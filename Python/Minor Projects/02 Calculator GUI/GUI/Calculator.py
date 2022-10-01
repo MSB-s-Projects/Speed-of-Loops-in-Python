@@ -105,7 +105,7 @@ Heading.pack(pady=10, ipadx=10)
 # Content.
 val = StringVar()                                                                                                       # val(a String variable for entry box)
 val.set("")                                                                                                             # setting val's value to ""
-cal_screen = Entry(root3, textvariable=val, font=" Aerial 30 bold", width=19)                                           # cal_screen - Entry box for calculator input.
+cal_screen = Entry(root3, textvariable=val, font=('Lucida Bright', 30, 'bold'), width=19)                                           # cal_screen - Entry box for calculator input.
 cal_screen.pack(fill=X, padx=25)
 cal_screen.bind('<Return>', equals)
 
@@ -113,35 +113,36 @@ tip1 = Balloon()                                                                
 
 tip1['bg'] = 'white'
 
-tip1.bind_widget(cal_screen, balloonmsg="Enter the value using keyboard or buttons below.")
+tip1.bind_widget(cal_screen, balloonmsg= "Enter the values below.")
 
 f1 = Frame(root3, bg='LightYellow3')                                                                                    # Frame 1.
 f1.pack(pady=10, fill=BOTH, padx=25, side=TOP)
 
 # Creating Buttons.
-bt1 = Button(f1, text="C", font="Aerial 25 bold", width=3)
-bt2 = Button(f1, text="/", font="Aerial 25 bold", width=3)
-bt3 = Button(f1, text="*", font="Aerial 25 bold", width=3)
+bt1 = Button(f1, text="C", font=('Lucida Bright', 25, 'bold'), width=3)
+bt2 = Button(f1, text="/", font=('Lucida Bright', 25, 'bold'), width=3)
+bt3 = Button(f1, text="*", font=('Lucida Bright', 25, 'bold'), width=3)
 bt4 = Button(f1, text="-", font="Aerial 25 bold", width=3)
-bt5 = Button(f1, text=7, font="Aerial 25 bold", width=3)
-bt6 = Button(f1, text=8, font="Aerial 25 bold", width=3)
-bt7 = Button(f1, text=9, font="Aerial 25 bold", width=3)
-bt8 = Button(f1, text="+", font="Aerial 25 bold", height=4, width=3)
-bt9 = Button(f1, text=4, font="Aerial 25 bold", width=3)
-bt10 = Button(f1, text=5, font="Aerial 25 bold", width=3)
-bt11 = Button(f1, text=6, font="Aerial 25 bold", width=3)
-bt12 = Button(f1, text=1, font="Aerial 25 bold", width=3)
-bt13 = Button(f1, text=2, font="Aerial 25 bold", width=3)
-bt14 = Button(f1, text=3, font="Aerial 25 bold", width=3)
-bt15 = Button(f1, text="=", font="Aerial 25 bold", height=4, width=3)
-bt16 = Button(f1, text=0, font="Aerial 25 bold", width=8)
-bt17 = Button(f1, text=".", font="Aerial 25 bold", width=3)
+bt5 = Button(f1, text=7, font=('Lucida Bright', 25, 'bold'), width=3)
+bt6 = Button(f1, text=8, font=('Lucida Bright', 25, 'bold'), width=3)
+bt7 = Button(f1, text=9, font=('Lucida Bright', 25, 'bold'), width=3)
+bt8 = Button(f1, text="+", font=('Lucida Bright', 25, 'bold'), height=4, width=3)
+bt9 = Button(f1, text=4, font=('Lucida Bright', 25, 'bold'), width=3)
+bt10 = Button(f1, text=5, font=('Lucida Bright', 25, 'bold'), width=3)
+bt11 = Button(f1, text=6, font=('Lucida Bright', 25, 'bold'), width=3)
+bt12 = Button(f1, text=1, font=('Lucida Bright', 25, 'bold'), width=3)
+bt13 = Button(f1, text=2, font=('Lucida Bright', 25, 'bold'), width=3)
+bt14 = Button(f1, text=3, font=('Lucida Bright', 25, 'bold'), width=3)
+bt15 = Button(f1, text="=", font=('Lucida Bright', 25, 'bold'), height=4, width=3)
+bt16 = Button(f1, text=0, font=('Lucida Bright', 25, 'bold'), width=8)
+bt17 = Button(f1, text=".", font=('Lucida Bright', 25, 'bold'), width=3)
 
 # Grid Configuring.
 Grid.columnconfigure(f1, 0, weight=1)
 Grid.columnconfigure(f1, 6, weight=1)
 
 # Griding all the buttons.
+#Try to maintain padx:pady = 1:1 for better interface 
 bt1.grid(row=0, column=1, padx=10, pady=10)
 bt2.grid(row=0, column=2, padx=10, pady=10)
 bt3.grid(row=0, column=3, padx=10, pady=10)

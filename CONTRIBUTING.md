@@ -12,7 +12,6 @@ To contribute to this Repo, you can:
 - Suggest Enhancements
 - Work on Documentation
 
-
 ## Submitting a Pull Request
 
 After you decide how to contribute and send me a pull request, follow these steps to have it merged:

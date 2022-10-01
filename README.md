@@ -1,11 +1,5 @@
-# Projects
+# Speed of Loops in Python
 
-This is a repository to store all of the projects which I work on.
+- In this project, I will be comparing the ***speed** of different **loops in Python***.
 
-* _This Repo Contains Folders for different languages(like Python, Cpp, JavaScript,etc)_
-* Each Folder Contains 2 Sub-Folders:
-  * Major Projects:
-      `Which Will Contain All the Major Projects in that Language.`
-  * Minor Projects:
-      `Which will contain some minor projects made just for practice in that language.`
-* `Note:` Each Folder will also contain a **README** file.
+- I will check for the same amount of work done, which *method of looping is the **fastest** in **Python** Language*.

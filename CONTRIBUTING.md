@@ -1,6 +1,6 @@
 # Contributing to my Projects
 
-Thanks for your interest in contributing to my projects! There are many ways to contribute, and I appreciate all of them. 🎉
+Thanks for your interest in contributing to my Repo! There are many ways to contribute, and I appreciate all of them. 🎉
 
 - The following is a set of guidelines for contributing to this Repo, which is created by [Manobal-Singh-Bagady](https://github.com/Manobal-Singh-Bagady). These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request too. 🤗
 
